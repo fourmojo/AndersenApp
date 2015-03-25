@@ -9,8 +9,9 @@
 </head>
 <body id="<%= 'admin' if on_admin? %>">
   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="navbar-inner">
-      <div class="container">
+    <nav class="collapse navbar-collapse bs-navbar-collapse">
+      <div class="navbar-inner">
+        <div class="container">
         <div class="navbar-header">
           <%= link_to "Andersen Subcontractor", root_path, { class: "navbar-brand" } %>
         </div>
@@ -74,6 +75,7 @@
               </li>
             </ul>
           </div>
+          </nav>
         <% end %>
       </div>
     </div>
